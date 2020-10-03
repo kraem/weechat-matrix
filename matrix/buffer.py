@@ -936,6 +936,8 @@ class RoomBuffer(object):
                 room.canonical_alias
             )
 
+        W.prnt("", "hello")
+
     @property
     def backlog_pending(self):
         return self._backlog_pending
