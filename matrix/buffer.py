@@ -927,7 +927,7 @@ class RoomBuffer(object):
             room.room_id
         )
 
-        elif room.canonical_alias:
+        if room.canonical_alias:
             room_name = self.room.canonical_alias
 
             W.buffer_set(
