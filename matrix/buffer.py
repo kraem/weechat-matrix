@@ -1153,7 +1153,7 @@ class RoomBuffer(object):
                 W.buffer_set(
                     self.weechat_buffer._ptr,
                     "localvar_set_canonical_alias",
-                    room.canonical_alias
+                    self.room.canonical_alias
                 )
             elif self.room.name == "#":
                 room_name = "##"
